@@ -309,6 +309,7 @@ footer {
   header {
     width: 80%;
     flex-direction: column-reverse;
+    aline-content: flex-start;
   }
 
   header nav {
@@ -317,11 +318,13 @@ footer {
 
   .logo {
     width: 30%;
+    margin-left: 35%;
   }
 
   .cta {
     justify-content: center;
     padding: 3%;
+    margin-right: 20%;
   }
 
   .main-content {
@@ -346,12 +349,23 @@ footer {
 /* MOBILE VIEW */
 
 @media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 0;
+  }
+
   .cta {
     justify-content: center;
     width: 49%;
   }
+
   .main-content {
     width: 49%;
     margin: 3%;
-
+  }
+  .main-content .top-content .text-content {
+  }
 }
