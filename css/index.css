@@ -154,7 +154,7 @@ h5 {
 /* DESKTOP */
 
 .container {
-  width: 85%;
+  width: 100%;
   /* TB LR */
   margin: 0 auto;
 }
@@ -162,11 +162,12 @@ h5 {
 /* header */
 header {
   display: flex;
+  width: 90%;
 }
 
 header nav {
   display: flex;
-  width: 30%;
+  width: 40%;
   margin-top: 35px;
   vertical-align: top;
   padding: 3%;
@@ -192,15 +193,17 @@ header nav a:last-child {
   margin-right: 0;
 }
 
-.logo {
-  margin-top: 25px;
+img .logo {
   display: flex;
-  justify-content: right;
+  text-align: right;
 }
 
 /* cta */
 .cta {
   display: flex;
+  width: 90%;
+  justify-content: center;
+  margin-left: 60px;
 }
 
 .cta .cta-text {
@@ -235,9 +238,13 @@ header nav a:last-child {
 }
 
 .main-content {
+  width: 90%;
+  justify-content: center;
   border-top: 1px solid black;
   margin-top: 76px;
   padding-top: 39px;
+  margin-right: 0;
+  margin-left: 75px;
 }
 
 .main-content .top-content {
@@ -245,7 +252,7 @@ header nav a:last-child {
 }
 
 .main-content .top-content .text-content {
-  width: 80%;
+  width: 90%;
   display: flex;
   margin-right: 34px;
 }
@@ -275,7 +282,7 @@ header nav a:last-child {
 }
 
 .main-content .bottom-content .text-content {
-  width: 45%;
+  width: 100%;
   display: flex;
   margin-right: 12px;
   padding: 2%;
@@ -292,9 +299,11 @@ header nav a:last-child {
 }
 
 .contact {
+  width: 90%;
   margin-top: 57px;
   border-top: 1px solid black;
   padding: 39px 10px 0;
+  margin-left: 60px;
 }
 
 .contact p {
@@ -310,22 +319,26 @@ footer {
 /* TABLET */
 
 @media (max-width: 800px) {
+  * .container {
+    width: 100%;
+    margin: 0 auto;
+  }
   .cta img {
     display: none;
   }
 
   header {
-    width: 80%;
+    width: 100%;
     flex-direction: column-reverse;
+    align-items: center;
   }
 
   header nav {
     justify-content: center;
   }
 
-  .logo {
-    width: 30%;
-    margin-left: 35%;
+  header nav a {
+    width: 100%;
   }
 
   .cta {
@@ -333,9 +346,13 @@ footer {
     padding: 3%;
     margin-right: 20%;
   }
-
+  .cta .cta-text {
+    margin-top: 3%;
+    margin-left: 30%;
+  }
   .main-content {
-    width: 100%;
+    width: 94%;
+    margin: 3%;
   }
   .main-content .middle-img {
     width: 100%;
@@ -345,15 +362,16 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin: 0;
   }
 
-  .bottom-content {
-    width: 90%;
-    align-content: space-evenly;
+  .main-content .bottom-content .text-content {
+    padding: 3px;
+    margin-top: 20px;
   }
 
   .contact {
-    width: 80%;
+    width: 94%;
     margin: 3%;
   }
 }
@@ -361,7 +379,21 @@ footer {
 /* MOBILE VIEW */
 
 @media (max-width: 500px) {
+  * .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    margin-left: 10%;
+  }
+
+  header {
+    width: 94%;
+    margin: 3%;
+  }
   header nav {
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     vertical-align: top;
@@ -369,28 +401,54 @@ footer {
   }
 
   header nav a {
-    border: 1px solid gray;
+    justify-content: center;
+    border-bottom: 1px solid gray;
     width: 100%;
     text-align: center;
     margin-right: 0;
+    padding: 5%;
   }
 
-  .cta {
+  .cta .cta-text {
     justify-content: center;
     width: 100%;
+    margin-top: 0;
+    margin-left: 20%;
   }
 
   .main-content {
-    width: 80%;
+    width: 94%;
+    padding-top: 2px;
     margin: 3%;
   }
 
-  .main-content .top-content .text-content {
-    width: 80%;
+  .main-content .middle-img {
+    width: 100%;
+    margin-top: 20px;
   }
 
   .main-content .top-content .text-content {
+    width: 94%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .main-content .top-content {
     display: flex;
     flex-direction: column;
+    padding: 3%;
+  }
+
+  .main-content .bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-content .bottom-content .text-content {
+    width: 94%;
+    padding: 0;
+    padding-bottom: 5px;
+    margin-left: 2px;
   }
 }
