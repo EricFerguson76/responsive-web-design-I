@@ -162,19 +162,17 @@ h5 {
 /* header */
 header {
   display: flex;
-  width: 90%;
+  width: 75%;
+  margin-left: 5%;
 }
 
 header nav {
   display: flex;
-  width: 40%;
   margin-top: 35px;
   vertical-align: top;
-  padding: 3%;
 }
 
 header nav a {
-  padding: 3%;
   margin-right: 30%;
   font-size: 14px;
   color: gray;
@@ -193,9 +191,8 @@ header nav a:last-child {
   margin-right: 0;
 }
 
-img .logo {
+header .logo {
   display: flex;
-  text-align: right;
 }
 
 /* cta */
@@ -282,11 +279,11 @@ img .logo {
 }
 
 .main-content .bottom-content .text-content {
-  width: 100%;
+  width: 94%;
   display: flex;
   margin-right: 12px;
-  padding: 2%;
-  margin: 3%;
+  align-content: center;
+  padding-right: 2%;
 }
 
 .bottom-content {
