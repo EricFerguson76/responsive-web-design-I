@@ -154,7 +154,7 @@ h5 {
 /* DESKTOP */
 
 .container {
-  width: 880px;
+  width: 85%;
   /* TB LR */
   margin: 0 auto;
 }
@@ -166,13 +166,15 @@ header {
 
 header nav {
   display: flex;
-  width: 691px;
-  vertical-align: top;
+  width: 30%;
   margin-top: 35px;
+  vertical-align: top;
+  padding: 3%;
 }
 
 header nav a {
-  margin-right: 65px;
+  padding: 3%;
+  margin-right: 30%;
   font-size: 14px;
   color: gray;
   text-decoration: none;
@@ -190,8 +192,10 @@ header nav a:last-child {
   margin-right: 0;
 }
 
-header .logo {
+.logo {
   margin-top: 25px;
+  display: flex;
+  justify-content: right;
 }
 
 /* cta */
@@ -206,7 +210,7 @@ header .logo {
   font-size: 77px;
   margin-top: 120px;
   text-align: center;
-  padding: 0px 75px;
+  padding: 0 10%;
 }
 
 .cta .cta-text button {
@@ -227,6 +231,7 @@ header .logo {
 .cta img {
   display: flex;
   margin-top: 69px;
+  justify-content: flex-end;
 }
 
 .main-content {
@@ -240,7 +245,7 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
+  width: 80%;
   display: flex;
   margin-right: 34px;
 }
@@ -260,6 +265,7 @@ header .logo {
 }
 
 .main-content .middle-img {
+  width: 100%;
   margin-top: 45px;
 }
 
@@ -269,9 +275,11 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
+  width: 45%;
   display: flex;
   margin-right: 12px;
+  padding: 2%;
+  margin: 3%;
 }
 
 .bottom-content {
@@ -309,7 +317,6 @@ footer {
   header {
     width: 80%;
     flex-direction: column-reverse;
-    aline-content: flex-start;
   }
 
   header nav {
@@ -328,11 +335,16 @@ footer {
   }
 
   .main-content {
-    width: 80%;
-    margin: 3%;
+    width: 100%;
   }
   .main-content .middle-img {
     width: 100%;
+  }
+
+  .main-content .bottom-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 
   .bottom-content {
@@ -349,23 +361,36 @@ footer {
 /* MOBILE VIEW */
 
 @media (max-width: 500px) {
-  nav {
+  header nav {
     flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+    margin-top: 35px;
   }
 
-  nav a {
-    padding: 0;
+  header nav a {
+    border: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
   }
 
   .cta {
     justify-content: center;
-    width: 49%;
+    width: 100%;
   }
 
   .main-content {
-    width: 49%;
+    width: 80%;
     margin: 3%;
   }
+
   .main-content .top-content .text-content {
+    width: 80%;
+  }
+
+  .main-content .top-content .text-content {
+    display: flex;
+    flex-direction: column;
   }
 }
